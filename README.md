@@ -26,7 +26,23 @@ When this counter reaches a certain threshold (5 seconds) it triggers a boolean 
 This counter is only reset when the robot leaves the chasing state-how the robot leaves is essentially the opposite of the way the robot enters the chase state. 
 
 ## Milestone 2 Devlog
-Milestone 2 Devlog goes here.
+# Complicating gameplay feature
+
+Goal: The player takes constant damage in fog if they stay in it for too long.
+1. Add health mechanic to player
+	1. Add a scene variable for the player's HP.
+	2. Add UI element that tracks the player's HP.
+
+2. Create logic that will lower the player's HP depending on their position. Logic will be created in the GameController state machine, and should be present only in the Chase phase.
+	1. Create gameObjects whose colliders will provide triggers for entering and exiting these fields.
+	2. On contact, a timer will start. This timer tracks how many seconds the player is in the fog (the bounds of the gameObject). Once it reaches 0, their HP begins lowering.
+	3. Once the player leaves the fog, the timer resets.
+
+3. Make it actually work in-game.
+	1. Use the item spawner C# script to randomly select fog locations, and enable the respective meshes.
+	2. Create a semi-transparent material to differentiate the fog locations from non-fog covered locations.
+	2. Reset the selection and enabling of these fog locations in LevelLoader.
+
 ## Milestone 3 Devlog
 Milestone 3 Devlog goes here.
 ## Milestone 4 Devlog
