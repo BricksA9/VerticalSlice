@@ -7,6 +7,21 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
+      name: dark brown
+    second: {fileID: 2100000, guid: d844bd76b6833a94fbb16578bde3ff78, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dark grey
+    second: {fileID: 2100000, guid: 9ab020a379896a14dabca576c58adf54, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: dark grey lighter
+    second: {fileID: 2100000, guid: 941b536ac5f90b246a3e014ed3b6cdb9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
       name: dark red
     second: {fileID: 2100000, guid: ff4c1433b7f9333439a6aeef8a344ece, type: 2}
   - first:
@@ -14,6 +29,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: grey shader
     second: {fileID: 2100000, guid: 3e9cdf58bf53f2a45865da0b43524093, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: silver
+    second: {fileID: 2100000, guid: 28ca650c7fb42cc46bb224bc52dcd07d, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
@@ -45,7 +65,7 @@ ModelImporter:
     isReadable: 0
   meshes:
     lODScreenPercentages: []
-    globalScale: 0.1
+    globalScale: 0.05
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -100,7 +120,7 @@ ModelImporter:
     armStretch: 0.05
     legStretch: 0.05
     feetSpacing: 0
-    globalScale: 0.1
+    globalScale: 0.0005
     rootMotionBoneName: 
     hasTranslationDoF: 0
     hasExtraRoot: 0
