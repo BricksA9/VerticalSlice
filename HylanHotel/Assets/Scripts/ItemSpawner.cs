@@ -8,7 +8,7 @@ public class ItemSpawner : MonoBehaviour
 {
     [SerializeField] public List<GameObject> listOfSpawnLocations;
     [SerializeField] public List<GameObject> listOfSpawnableItems;
-    [SerializeField] public int maxSpawnedItems;
+    //[SerializeField] public int maxSpawnedItems; //not needed
 
     // Start is called before the first frame update
     void Start()
@@ -25,7 +25,7 @@ public class ItemSpawner : MonoBehaviour
     {
         //get a random location and a random item
         GameObject selectedLocation = listOfSpawnLocations[Random.Range(0, listOfSpawnLocations.Count)];
-        Debug.Log("got a location: " + selectedLocation);
+        //Debug.Log("got a location: " + selectedLocation);
         return selectedLocation;
     }
 
@@ -33,7 +33,7 @@ public class ItemSpawner : MonoBehaviour
     {
         //get a random location and a random item
         GameObject selectedItem = listOfSpawnableItems[Random.Range(0, listOfSpawnableItems.Count)];
-        Debug.Log("got an item: " + selectedItem);
+        //Debug.Log("got an item: " + selectedItem);
         return selectedItem;
     }
 }

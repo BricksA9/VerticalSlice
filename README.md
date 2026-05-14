@@ -43,11 +43,16 @@ Goal: The player takes constant damage in fog if they stay in it for too long.
 	2. Create a semi-transparent material to differentiate the fog locations from non-fog covered locations.
 	2. Reset the selection and enabling of these fog locations in LevelLoader.
 
-ANSWER THIS AFTER CODING: Did the task steps break-down activity & quiz question (from W5) help you build a feature for this Milestone? Why or why not, and what would you do to improve your break-downs to be more helpful if you were to do them again?
+ANSWER THIS AFTER CODING: Did the task steps break-down activity & quiz question (from W5) help you build a feature for this Milestone? 
+Why or why not, and what would you do to improve your break-downs to be more helpful if you were to do them again?
 
-Explain how you bridged visual scripting and code in your game. Are you calling a custom event from a Graph from a C# method, or vice versa, and what purpose does this serve in your architecture? Make sure to name the C# script(s) involved, and attach a screenshot of the relevant Graph.
+Explain how you bridged visual scripting and code in your game. Are you calling a custom event from a Graph from a C# method, or vice versa, 
+and what purpose does this serve in your architecture? Make sure to name the C# script(s) involved, and attach a screenshot of the relevant Graph.
 
-Briefly explain (in 1-2 sentences) what Unity system you want us to grade for Feature (3). It doesn't matter if it's what you originally pitched- pick your best one and tell us where to find it so we can give you credit.
+Briefly explain (in 1-2 sentences) what Unity system you want us to grade for Feature (3). It doesn't matter if it's what you originally pitched- 
+pick your best one and tell us where to find it so we can give you credit.
+
+
 
 ## Milestone 3 Devlog
 Milestone 3 Devlog goes here.
