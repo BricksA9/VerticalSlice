@@ -44,23 +44,23 @@ Goal: The player takes constant damage in fog if they stay in it for too long.
 	2. Reset the selection and enabling of these fog locations in LevelLoader.
 	
 # Post Coding Questions
-Did the task steps break-down activity & quiz question (from W5) help you build a feature for this Milestone? 
+1. Did the task steps break-down activity & quiz question (from W5) help you build a feature for this Milestone? 
 Why or why not, and what would you do to improve your break-downs to be more helpful if you were to do them again?
 
 Yes. Overall, the breakdown activity allowed me to easily visualize short, simple steps (most of the time) to build the fog feature.
 
-Explain how you bridged visual scripting and code in your game. Are you calling a custom event from a Graph from a C# method, or vice versa, 
+2. Explain how you bridged visual scripting and code in your game. Are you calling a custom event from a Graph from a C# method, or vice versa, 
 and what purpose does this serve in your architecture? Make sure to name the C# script(s) involved, and attach a screenshot of the relevant Graph.
 
-While I didn't make the code in this feature, I reused the same script for spawning items for the fog instead. The script has methods to randomly choose an item from a list as well as randomly choose a spawn location from a different list.
+While I didn't make the code for this feature specifically, I reused the same script for spawning items but for the fog instead. The script has methods to randomly choose an item from a list as well as randomly choose a spawn location from a different list.
 C# script involved: 
 ItemSpawner
 
 Image - place where the script was called (found in the GameController state machine, in the LevelLoader state graph)
 ![alt text](image-1.png)
 
-Briefly explain (in 1-2 sentences) what Unity system you want us to grade for Feature (3). It doesn't matter if it's what you originally pitched- 
-pick your best one and tell us where to find it so we can give you credit.
+3. Briefly explain (in 1-2 sentences) what Unity system you want us to grade for Feature (3).
+
 Inventory system. It can be found inside the PlayerInventory graph. It uses two lists - ItemManager and playerInventory, as well as a lot of other variables, to keep track, spawn, and delete instantiated items. The player can select an item, which is reflected in the UI, and then use or drop it. Essentially, it's a visualization of a list, as the UI slots update whenever an action is taken with the item.
 
 
