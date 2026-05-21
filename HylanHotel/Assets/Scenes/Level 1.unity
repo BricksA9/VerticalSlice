@@ -771,7 +771,7 @@ VideoPlayer:
   m_AudioOutputMode: 2
   m_TargetAudioSources: []
   m_DirectAudioVolumes: []
-  m_Url: https://file.garden/agO3LBYzBA-xXehl/mainMenuIdlingAnim.mp4
+  m_Url: https://file.garden/agO3LBYzBA-xXehl/mainMenuIdlingAnimNew.mp4
   m_EnabledAudioTracks: 
   m_DirectAudioMutes: 
   m_ControlledAudioTrackCount: 0
@@ -5244,7 +5244,7 @@ VideoPlayer:
   - {fileID: 0}
   m_DirectAudioVolumes:
   - 1
-  m_Url: https://file.garden/agO3LBYzBA-xXehl/mainMenuToStart.mp4
+  m_Url: https://file.garden/agO3LBYzBA-xXehl/mainMenuToStartNew.mp4
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
@@ -5753,7 +5753,7 @@ MonoBehaviour:
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"playerMovement","value":{"$content":4,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"Unity.VisualScripting.ScriptMachine,
       Unity.VisualScripting.Flow, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"playerInventoryScript","value":{"$content":5,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"Unity.VisualScripting.ScriptMachine,
       Unity.VisualScripting.Flow, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"chasePhaseWinConditionMaxTimer","value":{"$content":50.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"explorationPhaseMaxTimer","value":{"$content":2000.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"explorationPhaseMaxTimer","value":{"$content":20.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"playerHp","value":{"$content":100,"$type":"System.Int32"},"typeHandle":{"Identification":"System.Int32,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"playerInventory","value":{"$content":[],"$type":"System.Collections.Generic.List`1[[UnityEngine.GameObject,
       UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null]]"},"typeHandle":{"Identification":"System.Collections.Generic.List`1[[UnityEngine.GameObject,
