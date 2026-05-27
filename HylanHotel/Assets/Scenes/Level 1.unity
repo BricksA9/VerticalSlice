@@ -3832,7 +3832,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Z to sneak
+  m_text: 'C to sneak
 
     left shift to sprint
 
