@@ -66,17 +66,18 @@ Inventory system. It can be found inside the PlayerInventory graph. It uses two 
 
 ## Milestone 3 Devlog
 
-1. Describe how your ShaderGraph works. You must cite something technical about the shader (like ShaderGraph Nodes used, or concepts learned in class about vertex data or the rendering pipeline) and accurately explain the shader. Attach a screenshot of your ShaderGraph. Please make sure it's also very clear from your explanation where the graders can find this shader in the game to give you credit for it.
-I made a vignette that pulses when you are standing in foggy areas of the map. It can be found anywhere there is a translucent box (you may have to reload the level a few times as its locations are randomly generated). It works by taking the rendered output of the scene in the URP Sample Buffer node and the vignette texture, and using the blend node to add the vignette texture onto it. I made its activation conditional by using a branch node, which is called by the PlayerMovement script machine. 
+1.
+![alt text](image.png)
 
-2. In a paragraph or less, explain to the grading team what you improved in your gameplay based on feedback from playtesting.
+
+I made a vignette that pulses when you are standing in foggy areas of the map. It can be found anywhere there is a translucent box (you may have to reload the level a few times as the locations it spawns in are randomly selected). It works by taking the rendered output of the scene in the URP Sample Buffer node and the vignette texture, and using the blend node to add the vignette texture onto it. Its pulsing is controlled by a lerp node, which uses a sin wave multiplied by time (which is also multiplied). I made its activation conditional by using a boolean in a branch node, which is called by the PlayerMovement script machine. 
+
+2.
 I improved the player controls, as some players thought that pressing C to sneak felt awkward. I also made it more evident that the player was in fog through the vignette.
 
-3. In a paragraph or less, explain to the grading team what new content you added since the last Milestone, and its context in the gameplay loop.
+3.
 I added obstacles, textures, and models into my scene and moved the spawning locations of items to fit these obstacles. This way, the player can no longer just pick up items off the ground. They must scour the place first, find out where the items are, and then memorize their locations so that they can have better chances at escaping the robot.
 
-## Milestone 4 Devlog
-Milestone 4 Devlog goes here.
 ## Final Devlog
 Final Devlog goes here.
 ## Open-source assets
