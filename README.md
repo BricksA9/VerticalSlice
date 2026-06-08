@@ -79,7 +79,27 @@ I improved the player controls, as some players thought that pressing C to sneak
 I added obstacles, textures, and models into my scene and moved the spawning locations of items to fit these obstacles. This way, the player can no longer just pick up items off the ground. They must scour the place first, find out where the items are, and then memorize their locations so that they can have better chances at escaping the robot.
 
 ## Final Devlog
-Final Devlog goes here.
+1.
+Briefly describe your core gameplay loop and the content we can find in your game. Then, relate the gameplay and content you implemented back to your original plan for creating a Vertical Slice: how does this gameplay and content illustrate to the player what the full game would be like?
+
+2.
+In about a paragraph, describe how your rendering effect is activated from gameplay logic. Either attach a screenshot of the relevant Graph OR cite the relevant C# file(s) so we can find them in your repo. Accurately describe your system with technical terms.
+
+3.
+Describe your process for how you break down a large project into specific systems. If you don't have a process that works well for you right now, you must come up with an describe a viable plan.
+Make sure to also answer ALL of these questions in your answer:
+Do you plan on using either the bubble diagram break-downs and/or the task step break-downs we practiced this quarter in your planning process? Why or why not?
+How does the process of breaking down a large project into small steps affect your understanding of the scope of the project?
+How does the plan you're describing relate to your process of creating the Vertical Slice project? You can write about either how things went poorly and how you'd improve your process as a result, or about how things went well that you want to repeat.
+
+
+I first come up with the goal I want the game (or project) to be. For games, it'd be the player objective and experience. For other things like animations, it'd be the intended story or technical level I want it to achieve. 
+Next, I attempt to figure out the systems that I need. For a game, I would figure out the core mechanics and rules of the game first. These are likely to remain changing until the player objective/experience is solidified. I usually start in my head, and as soon as I become confused on the logic of a system or mechanic (i.e. an inventory), I try to diagram or sketch it out. This would usually be done by one of three ways: either a flowchart, through steps, or a system map. The system maps primarily revolve around using a variant of the breakdowns done in class. Instead of bubbling everything in and mapping the relations between systems, it would be mainly used for one or two self-contained systems that only have a few external variables.
+Once the systems and mechanics crucial to game's concept are mapped out, they reveal the true scope of the project.
+
+For Hylan Hotel, I had trouble understanding the relations between the player, inventory, and trying to update the corresponding UI. 
+
+
 ## Open-source assets
 - Cite any external assets used here!
 
