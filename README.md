@@ -85,6 +85,8 @@ Briefly describe your core gameplay loop and the content we can find in your gam
 2.
 In about a paragraph, describe how your rendering effect is activated from gameplay logic. Either attach a screenshot of the relevant Graph OR cite the relevant C# file(s) so we can find them in your repo. Accurately describe your system with technical terms.
 
+My rendering effect is a fullscreen overlay that activates when the player takes any form of damage (either through fog or the robot).
+
 3.
 Describe your process for how you break down a large project into specific systems. If you don't have a process that works well for you right now, you must come up with an describe a viable plan.
 Make sure to also answer ALL of these questions in your answer:
@@ -104,3 +106,19 @@ For Hylan Hotel, I had trouble understanding the relations between the player, i
 - Cite any external assets used here!
 
 Unity's Toon Shader
+
+### UI
+
+Sky Antoniewicz - all UI assets
+
+### Audio
+
+[Horror Background Atmopshere](https://pixabay.com/sound-effects/horror-horror-background-atmosphere-156462/)
+
+[Soft Rain Ambient](https://pixabay.com/sound-effects/soft-rain-ambient-111154/)
+
+[Footsteps Leather Wood Walk](https://freesound.org/people/marb7e/sounds/620334/)
+
+[Walking on Metal](https://freesound.org/people/Sanderboah/sounds/696374/)
+
+[Crushing Kick x1](https://freesound.org/people/newlocknew/sounds/593909/)

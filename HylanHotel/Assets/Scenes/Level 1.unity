@@ -943,7 +943,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 115.1, y: -37}
+  m_AnchoredPosition: {x: 115.100006, y: 104}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &168082359
@@ -975,7 +975,7 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4285537333
+    rgba: 4294290122
   m_fontColor: {r: 0.7921569, g: 0.6666667, b: 0.9607843, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
@@ -1632,7 +1632,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 61746861f113f2047a1bbe3b5a242198, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: -0.362
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 61746861f113f2047a1bbe3b5a242198, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4733,7 +4733,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 009cd886626f12f40b13644ba1878f4b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: -0.722
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 009cd886626f12f40b13644ba1878f4b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5754,7 +5754,8 @@ MonoBehaviour:
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"sprintSoundSfxTimer","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"sprintSoundSfxMaxTimer","value":{"$content":0.3,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
       mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"alreadyUsingSoda","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
-      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"healthBar","value":{"$content":7,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
     _objectReferences:
     - {fileID: 1979054701}
     - {fileID: 532807125}
@@ -5763,6 +5764,7 @@ MonoBehaviour:
     - {fileID: 1884406983}
     - {fileID: 2076654880}
     - {fileID: 1262119606}
+    - {fileID: 805526294}
 --- !u!114 &1262119601
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15710,11 +15712,12 @@ PrefabInstance:
         mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"FogVignetteMaterial","value":{"$content":2,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Shader,
         UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"robotAnimator","value":{"$content":3,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.Animator,
         UnityEngine.AnimationModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"},{"name":"isPlayingAttackAudio","value":{"$content":false,"$type":"System.Boolean"},"typeHandle":{"Identification":"System.Boolean,
-        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+        mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"},{"name":"healthBar","value":{"$content":4,"$type":"UnityEngine.Object"},"typeHandle":{"Identification":"UnityEngine.GameObject,
+        UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
       objectReference: {fileID: 0}
     - target: {fileID: 6265798736594092982, guid: c6957109e1c38d54da04a746d81f215f, type: 3}
       propertyPath: _data._objectReferences.Array.size
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6265798736594092982, guid: c6957109e1c38d54da04a746d81f215f, type: 3}
       propertyPath: _data._objectReferences.Array.data[1]
@@ -15728,6 +15731,10 @@ PrefabInstance:
       propertyPath: _data._objectReferences.Array.data[3]
       value: 
       objectReference: {fileID: 8496266088184941980}
+    - target: {fileID: 6265798736594092982, guid: c6957109e1c38d54da04a746d81f215f, type: 3}
+      propertyPath: _data._objectReferences.Array.data[4]
+      value: 
+      objectReference: {fileID: 805526294}
     m_RemovedComponents:
     - {fileID: 3659869954339326025, guid: c6957109e1c38d54da04a746d81f215f, type: 3}
     m_RemovedGameObjects: []
