@@ -80,12 +80,15 @@ I added obstacles, textures, and models into my scene and moved the spawning loc
 
 ## Final Devlog
 1.
-Briefly describe your core gameplay loop and the content we can find in your game. Then, relate the gameplay and content you implemented back to your original plan for creating a Vertical Slice: how does this gameplay and content illustrate to the player what the full game would be like?
+
+The core gameplay loop exists in a level. In each level, there are 2 phases: exploration, and survival (chase). The player is intended to look around and, well, explore during the exploration phase, where there is no active threat. Ideally, the player figures out safe spots to hide in, the location of items, or the layout of the room. The survival phase is where the player is supposed to hide, fight, or die to the robot, and should be much more intense. The full game would consist of similar levels, where the loop remains the same, but the items, enemies/monsters, map layout, and map effects all change. The average difficulty would steadily rise as the player gets higher and higher up the hotel.
 
 2.
 In about a paragraph, describe how your rendering effect is activated from gameplay logic. Either attach a screenshot of the relevant Graph OR cite the relevant C# file(s) so we can find them in your repo. Accurately describe your system with technical terms.
 
-My rendering effect is a fullscreen overlay that activates when the player takes any form of damage (either through fog or the robot).
+The rendering effect that is present in the game is a pulsing fullscreen damage effect, activated whenever the player takes damage (either from the robot or environmental fog). Below is a screenshot of the shadergraph. It is triggered specifically when the Branch node gets the state of isOn. isOn is changed by the robot's state machine, in the Chase graph. To get to the node that changes isOn (Material SetFloat), I have the robot check the distance from the player using the top section of the screenshot. If it's below attackDistance, then it sets isOn to 1. If not, it sets it to 0.
+
+![alt text](image-3.png)
 
 3.
 Describe your process for how you break down a large project into specific systems. If you don't have a process that works well for you right now, you must come up with an describe a viable plan.
@@ -94,12 +97,12 @@ Do you plan on using either the bubble diagram break-downs and/or the task step 
 How does the process of breaking down a large project into small steps affect your understanding of the scope of the project?
 How does the plan you're describing relate to your process of creating the Vertical Slice project? You can write about either how things went poorly and how you'd improve your process as a result, or about how things went well that you want to repeat.
 
+I first come up with the goal I want the game (or project) to be. For games, it'd be the player objective and experience. For other things like full animations, it'd be the intended story or technical level I want the project to achieve. 
 
-I first come up with the goal I want the game (or project) to be. For games, it'd be the player objective and experience. For other things like animations, it'd be the intended story or technical level I want it to achieve. 
 Next, I attempt to figure out the systems that I need. For a game, I would figure out the core mechanics and rules of the game first. These are likely to remain changing until the player objective/experience is solidified. I usually start in my head, and as soon as I become confused on the logic of a system or mechanic (i.e. an inventory), I try to diagram or sketch it out. This would usually be done by one of three ways: either a flowchart, through steps, or a system map. The system maps primarily revolve around using a variant of the breakdowns done in class. Instead of bubbling everything in and mapping the relations between systems, it would be mainly used for one or two self-contained systems that only have a few external variables.
 Once the systems and mechanics crucial to game's concept are mapped out, they reveal the true scope of the project.
 
-For Hylan Hotel, I had trouble understanding the relations between the player, inventory, and trying to update the corresponding UI. 
+For Hylan Hotel, I had trouble understanding the relations between the player, inventory, and trying to update the corresponding UI. I basically followed my plan, up until I got confused. I tried to brute force my way without making a visualization, and it only complicated things. Eventually, one of the TAs suggested I make a flowchart to visualize the logic and relations. This was the first time I had gotten confused, to a point where I couldn't just figure it out in my head within a reasonable timeframe. Making the flowchart did indeed allow me to figure out the logic (and thus make implementation much easier). From then on, I made a few other flowcharts, such as the robot states, or one specifically for the inventory system.
 
 
 ## Open-source assets
@@ -109,7 +112,7 @@ Unity's Toon Shader
 
 ### UI
 
-Sky Antoniewicz - all UI assets
+Sky Antoniewicz - all UI assets, win/lose splash art
 
 ### Audio
 
