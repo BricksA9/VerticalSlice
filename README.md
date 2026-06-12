@@ -84,19 +84,12 @@ I added obstacles, textures, and models into my scene and moved the spawning loc
 The core gameplay loop exists in a level. In each level, there are 2 phases: exploration, and survival (chase). The player is intended to look around and, well, explore during the exploration phase, where there is no active threat. Ideally, the player figures out safe spots to hide in, the location of items, or the layout of the room. The survival phase is where the player is supposed to hide, fight, or die to the robot, and should be much more intense. The full game would consist of similar levels, where the loop remains the same, but the items, enemies/monsters, map layout, and map effects all change. The average difficulty would steadily rise as the player gets higher and higher up the hotel.
 
 2.
-In about a paragraph, describe how your rendering effect is activated from gameplay logic. Either attach a screenshot of the relevant Graph OR cite the relevant C# file(s) so we can find them in your repo. Accurately describe your system with technical terms.
 
 The rendering effect that is present in the game is a pulsing fullscreen damage effect, activated whenever the player takes damage (either from the robot or environmental fog). Below is a screenshot of the shadergraph. It is triggered specifically when the Branch node gets the state of isOn. isOn is changed by the robot's state machine, in the Chase graph. To get to the node that changes isOn (Material SetFloat), I have the robot check the distance from the player using the top section of the screenshot. If it's below attackDistance, then it sets isOn to 1. If not, it sets it to 0.
 
 ![alt text](image-3.png)
 
 3.
-Describe your process for how you break down a large project into specific systems. If you don't have a process that works well for you right now, you must come up with an describe a viable plan.
-Make sure to also answer ALL of these questions in your answer:
-Do you plan on using either the bubble diagram break-downs and/or the task step break-downs we practiced this quarter in your planning process? Why or why not?
-How does the process of breaking down a large project into small steps affect your understanding of the scope of the project?
-How does the plan you're describing relate to your process of creating the Vertical Slice project? You can write about either how things went poorly and how you'd improve your process as a result, or about how things went well that you want to repeat.
-
 I first come up with the goal I want the game (or project) to be. For games, it'd be the player objective and experience. For other things like full animations, it'd be the intended story or technical level I want the project to achieve. 
 
 Next, I attempt to figure out the systems that I need. For a game, I would figure out the core mechanics and rules of the game first. These are likely to remain changing until the player objective/experience is solidified. I usually start in my head, and as soon as I become confused on the logic of a system or mechanic (i.e. an inventory), I try to diagram or sketch it out. This would usually be done by one of three ways: either a flowchart, through steps, or a system map. The system maps primarily revolve around using a variant of the breakdowns done in class. Instead of bubbling everything in and mapping the relations between systems, it would be mainly used for one or two self-contained systems that only have a few external variables.
